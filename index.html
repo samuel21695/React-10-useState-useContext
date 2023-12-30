@@ -24,7 +24,13 @@
 
     // 카드 팩 컴포넌트 생성 함수
     function createCardPack(index) {
-      
+      const pack = document.createElement("div");
+      pack.id = `pack-${index}`;
+      pack.innerText = `Pack ${index + 1}`;
+      // 간단한 스타일링
+      pack.style.cursor = "pointer";
+      // 지역 상태 데이터
+      pack.isOpen = false;
     }
   </script>
 </body>
