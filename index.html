@@ -54,6 +54,15 @@
       });
       return pack;
     }
+
+    // 전역 상태를 기반으로 카드 팩들을 렌더링하는 함수
+    function renderPacks() {
+      const root = document.getElementById("root");
+      root.innerHTML = ""; // 기존 팩들을 초기화
+      for (let i = 0; i < globalState.packs; i++) {
+        root.appendChild(createCardPack(i));
+      }
+    }
   </script>
 </body>
 </html>
