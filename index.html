@@ -31,6 +31,10 @@
       pack.style.cursor = "pointer";
       // 지역 상태 데이터
       pack.isOpen = false;
+      /*
+        pack.isOpen은 pack이라는 DOM 객체에 동적으로 키(key) 하나를 추가한 것으로, React에서는 useState를 사용해 지역 상태를 관리합니다.
+        if (pack.isOpen) {} 부분이 useState()메서드를 모방한 것으로 ' 단방향 데이터 바인딩'을 구현한 것입니다.
+      */
     }
   </script>
 </body>
