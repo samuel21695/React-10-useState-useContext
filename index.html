@@ -70,6 +70,13 @@
       renderPacks();
     }
 
+    // 문서 getting
+    const addPackButton = document.getElementById("addPackButton");
+    // 아래의 addPack 함수를 클릭 이벤트에 연결
+    addPackButton.addEventListener("click", addPack);
+
+    // 초기 렌더링
+    renderPacks();
   
   </script>
 </body>
